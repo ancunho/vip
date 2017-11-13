@@ -1,0 +1,10 @@
+git init
+git status
+git add .
+git status
+git commit -am 'first commit'
+git status
+git remote add origin git@github.com:ancunho/vip.git
+git branch
+
+
