@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface UserService {
 
-    public ServerResponse selectAllUsers() throws Exception;
+    public ServerResponse<List<VIP_USER>> selectAllUsers() throws Exception;
 
 }

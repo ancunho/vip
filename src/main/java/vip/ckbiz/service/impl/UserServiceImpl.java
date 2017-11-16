@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
 
     private SqlSession sqlSession;
 
-    public ServerResponse selectAllUsers() throws Exception {
+    public ServerResponse<List<VIP_USER>> selectAllUsers() throws Exception {
         List<VIP_USER> lstAllUsers = sqlSession.selectList("VIP.USER.selectAllUsers");
 
         return ServerResponse.createBySuccess(lstAllUsers);
@@ -29,4 +29,6 @@ public class UserServiceImpl implements UserService {
     public void setSqlSession(SqlSession sqlSession) {
         this.sqlSession = sqlSession;
     }
+
+
 }

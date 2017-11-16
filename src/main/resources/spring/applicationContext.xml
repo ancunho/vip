@@ -10,6 +10,9 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+
+    <context:annotation-config/>
+
     <bean id="csrfFilter" class="org.springframework.security.web.csrf.CsrfFilter">
         <constructor-arg>
             <bean class="org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository"/>
